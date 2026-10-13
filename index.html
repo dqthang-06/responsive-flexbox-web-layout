@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung chính bao bọc toàn bộ bố cục (Flexbox xếp theo chiều dọc) -->
+    <div class="page-wrapper">
+
+        <!-- 1. Header: Tiêu đề trang web -->
+        <header class="header">
+            <h1>Trang Web CSS Flexbox</h1>
+            <p>Bố cục linh hoạt và tối ưu hiển thị đa thiết bị</p>
+        </header>
+
+        <!-- 2. Navigation: Thanh menu điều hướng -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Body Container: Chứa Main Content và Sidebar (Flexbox ngang trên desktop) -->
+        <div class="main-body">
+
+            <!-- Main Content: Nội dung chính (chiếm 3 phần) -->
+            <main class="content">
+                <h2>Nội Dung Chính</h2>
+                <p>
+                    CSS Flexbox là một công cụ mạnh mẽ giúp việc phân bổ kích thước và căn chỉnh các khối nội dung trở nên trực quan và thuận tiện hơn rất nhiều so với các phương pháp căn lề truyền thống.
+                </p>
+                <p>
+                    Nhờ sử dụng thuộc tính <code>flex: 3;</code> cho khu vực bài viết chính và <code>flex: 1;</code> cho thanh bên, hai cột sẽ luôn tự động co giãn theo tỷ lệ 3:1 một cách mượt mà.
+                </p>
+                <div class="card">
+                    <h3>Tính năng nổi bật</h3>
+                    <ul>
+                        <li>Tự động căn đều và căn giữa nội dung.</li>
+                        <li>Dễ dàng thay đổi thứ tự hiển thị bằng thuộc tính <code>order</code>.</li>
+                        <li>Chuyển đổi giao diện cột sang hàng nhanh chóng với Media Queries.</li>
+                    </ul>
+                </div>
+            </main>
+
+            <!-- Sidebar: Cột phụ bên cạnh (chiếm 1 phần) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Tin Mới Nhất</h3>
+                    <ul>
+                        <li><a href="#">Lộ trình làm chủ HTML & CSS</a></li>
+                        <li><a href="#">Kỹ thuật dàn trang Flexbox từ A-Z</a></li>
+                        <li><a href="#">Xu hướng thiết kế web Responsive</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Quảng Cáo</h3>
+                    <div class="ad-box">Banner quảng cáo khóa học Front-end</div>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- 5. Footer: Thông tin chân trang -->
+        <footer class="footer">
+            <p>&copy; 2026 CodeGym. Bản quyền thuộc về tác giả.</p>
+            <p>Hotline: 024-xxxx-xxxx | Email: contact@codegym.vn</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
